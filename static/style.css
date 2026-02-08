@@ -1,0 +1,35 @@
+/* Background */
+body {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Search card */
+.search-card {
+  background: white;
+}
+
+/* Investor card hover effect */
+.investor-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.investor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Sector badge */
+.sector-badge {
+  background-color: #6366f1;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Subtle spacing */
+.results {
+  margin-bottom: 40px;
+}
