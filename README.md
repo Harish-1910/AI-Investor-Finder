@@ -79,28 +79,60 @@ GROQ_API_KEY=your_groq_api_key_here
 The API key is loaded using environment variables and is never hardcoded in the source code.
 
 ---
+## 🔑 How to Create a Groq API Key
 
-## 🎯 Project Objective
+This project uses the **Groq API** to access the LLaMA model.  
+Follow the steps below to generate your API key.
 
-- Learn Flask by building a real AI-powered application
-- Understand AI API integration
-- Follow secure backend practices
-- Build an interview-ready mini project
+### Step 1: Sign up / Log in to Groq
+- Visit 👉 https://console.groq.com
+- Sign up using GitHub or Google, or log in if you already have an account
+
+### Step 2: Create an API Key
+- After logging in, go to the **API Keys** section
+- Click **Create API Key**
+- Copy the generated key
+
+### Step 3: Store the API Key Securely
+Create a `.env` file in the project root and add:
+
+GROQ_API_KEY=your_groq_api_key_here
+
+⚠️ Never commit your API key to GitHub.  
+The `.gitignore` file already prevents this.
+
+### Step 4: Add API Key on Render
+When deploying on Render:
+- Go to your Render service dashboard
+- Navigate to **Environment**
+- Add a new variable:
+  - Key: GROQ_API_KEY
+  - Value: your_groq_api_key_here
+- Save changes and redeploy
 
 ---
 
 ## 🌱 Future Enhancements
 
-- Investor category badges (AI / FinTech / SaaS)
-- Database integration
-- Deployment to Render or Railway
-- Advanced filtering and search
-- User authentication
+- Advanced investor categorization and filtering
+- Region-wise and funding-stage filters
+- Database integration for caching results
+- User authentication and saved searches
+- UI/UX improvements and animations
+- Custom prompt tuning for different domains
+- MIT License support and open-source contributions
 
 ---
 
-## 👤 Author
+## 🤝 Contributions
 
-Harish S  
-AI & Data Science Enthusiast  
-Python | Flask | LLaMA | AI Projects
+Contributions are **welcome and encouraged** 🎉  
+Feel free to fork the repository, open issues, or submit pull requests to improve features, UI, or performance.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**, allowing free use, modification, and distribution.
+
+---
