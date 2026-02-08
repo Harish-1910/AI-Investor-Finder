@@ -12,7 +12,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 @app.route("/", methods=["GET", "POST"])
 def home():
     investors = []
-    sector = None   # ✅ FIX
+    sector = None   
     country = None
 
     if request.method == "POST":
@@ -46,3 +46,7 @@ def home():
         investors=investors,
         sector=sector
     )
+ 
+ 
+if __name__ == "__main__":
+    app.run()
