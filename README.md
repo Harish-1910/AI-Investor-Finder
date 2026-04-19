@@ -5,7 +5,8 @@
 AI Investor Finder is a simple and elegant Flask-based web application that helps users discover potential investors based on a given sector and country.  
 The application uses the LLaMA 3.1 model via Groq API to generate AI-powered investor suggestions.
 
-This project is intentionally small, clean, and learning-focused — perfect for interviews and portfolio demonstration.
+This project is intentionally small, clean, and learning-focused .
+
 
 ---
 
